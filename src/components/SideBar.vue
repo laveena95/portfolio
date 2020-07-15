@@ -24,7 +24,7 @@
           </v-btn>
         </div>
       </v-list-item>
-      <v-divider class="mt-6" dark></v-divider>
+      <v-divider class="mt-6" color=""></v-divider>
       </v-list>
       <v-list align-center v-for="menu in menues" :key="menu.id"> 
         <v-list-item>
@@ -38,18 +38,25 @@
       </v-list>
       <v-list>
         <div class="text-center">
-          <v-btn rounded color="teal darken-4" dark>
+          <v-btn rounded color="teal darken-3" dark>
             <v-icon>near_me</v-icon>
             Hire Me</v-btn>
         </div>
       </v-list>
       <v-divider class="mt-6"></v-divider>
-
-      <v-switch
+      <v-container>
+        <div class="text-center white--text">
+          <h4> <v-icon color="white">brightness_medium</v-icon>
+          Dark Mode</h4>
+        </div>
+      <v-btn small center rounded outlined color="grey" class="ma-2" >
+        <v-switch
         v-model="$vuetify.theme.dark"
         primary
-        label="Dark"
       ></v-switch>
+      </v-btn>
+      
+      </v-container>
     </v-navigation-drawer>
 
     <v-main>
