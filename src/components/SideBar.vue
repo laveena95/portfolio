@@ -48,14 +48,13 @@
         <div class="text-center white--text">
           <h4> <v-icon color="white">brightness_medium</v-icon>
           Dark Mode</h4>
+          <v-btn small center rounded outlined color="grey" class="ma-2" size="50">
+            <v-switch
+            v-model="$vuetify.theme.dark" inset
+            outlined color="grey" large
+          ></v-switch>
+          </v-btn>
         </div>
-      <v-btn small center rounded outlined color="grey" class="ma-2" >
-        <v-switch
-        v-model="$vuetify.theme.dark"
-        primary
-      ></v-switch>
-      </v-btn>
-      
       </v-container>
     </v-navigation-drawer>
 
