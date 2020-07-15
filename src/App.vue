@@ -1,7 +1,7 @@
 <template>
     <v-app>
         <v-content transition="slide-x-transition">
-            <Header/>
+            <SideBar/>
             <router-view></router-view>
         </v-content>
         <router-view></router-view>
@@ -11,14 +11,14 @@
 
 <script>
 
-import Header from './components/Header';
+import SideBar from './components/SideBar';
 
 
 export default {
   name: 'App',
 
   components: {
-    Header,
+    SideBar,
   },
 
   data: () => ({
