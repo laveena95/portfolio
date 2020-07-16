@@ -1,10 +1,13 @@
 <template>
-<v-app id="sandbox">
+  <div>
     <v-navigation-drawer
-      v-model="primaryDrawer.model"
+      dark
+       v-model="primaryDrawer.model"
       :clipped="primaryDrawer.clipped"
       :floating="primaryDrawer.floating"
       :mini-variant="primaryDrawer.mini"
+      :permanent="primaryDrawer.type === 'permanent'"
+      :temporary="primaryDrawer.type === 'temporary'"
       app
       overflow
       class="teal darken-1"
@@ -26,8 +29,8 @@
       </v-list-item>
       <v-divider class="mt-6" color=""></v-divider>
       </v-list>
-      <v-list align-center v-for="menu in menues" :key="menu.id"> 
-        <v-list-item>
+      <v-list align-center v-for="menu in menues" :key="menu.id" > 
+        <v-list-item :to="menu.route" color="teal">
           <v-list-item-icon>
             <v-icon small color="white">{{ menu.icon}}</v-icon>
           </v-list-item-icon>
@@ -57,17 +60,7 @@
         </div>
       </v-container>
     </v-navigation-drawer>
-
-    <v-main>
-      <v-container fluid>
-        <v-row
-          align="center"
-          justify="center"
-        >         
-        </v-row>
-      </v-container>
-    </v-main>
-  </v-app>
+  </div>
 </template>
 
 <script>
@@ -103,31 +96,37 @@
           id: '1',
           icon: 'fa fa-user',
           title: 'About Me',
+          route: '/'
         },
          {
           id: '2',
           icon: 'important_devices',
           title: 'Portfolio',
+          route: '/portfolio'
         },
          {
           id: '3',
           icon: 'business_center',
           title: 'Services & Pricing',
+          route: '/services'
         },
          {
           id: '4',
           icon: 'description',
           title: 'Resume',
+          route: '/resume'
         },
          {
           id: '5',
           icon: 'pages',
           title: 'Blog',
+          route: '/blog'
         },
          {
           id: '6',
           icon: 'move_to_inbox',
           title: 'Contact',
+          route: '/contact'
         },
       ]
     }),

@@ -1,10 +1,9 @@
 <template>
     <v-app>
-        <v-content transition="slide-x-transition">
-            <SideBar/>
-            <router-view></router-view>
+       <SideBar/>
+        <v-content >
+          <router-view></router-view>
         </v-content>
-        <router-view></router-view>
     </v-app>
 </template>
 
