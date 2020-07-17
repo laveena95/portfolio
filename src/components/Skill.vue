@@ -31,7 +31,7 @@
         </v-card>
       </v-col>
       <v-container class="text-md-center mb-10">
-        <v-btn color="teal" dark align-center> <v-icon>mdi-arrow-right-bold-circle</v-icon><v-spacer></v-spacer> Service & Pricing</v-btn>
+        <v-btn color="teal" dark align-center to="/services"> <v-icon>mdi-arrow-right-bold-circle</v-icon><v-spacer></v-spacer> Service & Pricing</v-btn>
       </v-container>
     </v-row>
  </v-container>

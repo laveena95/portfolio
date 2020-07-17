@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container > 
         <v-col cols="12" md="4">
         <v-row>
           <v-col cols="12" md="2">
@@ -15,7 +15,7 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-container>
+      <v-container style="background-color:#e8e6e1;">
         <v-slide-group
         v-model="model"
         class="pa-4"
@@ -47,10 +47,9 @@
                 <v-img class="elevation-6" :src="item.src"></v-img>
             </v-avatar>
             <v-list-tile-content class="text-center">
-                <v-list-tile-text class="ma-4 teal--text text-center">{{ item.name }}
+                <v-list-tile-text class="ml-4 teal--text ">{{ item.name }}
+                    <v-card-text class="ml-6 mb-5">{{item.place}}</v-card-text>
                 </v-list-tile-text>
-                <div style="background-color:red; float:right;width:300px;"></div>
-                
             </v-list-tile-content>
             
             </v-card>
@@ -72,39 +71,39 @@
       items: [
           {
             id: '1',
-            src: require('../assets/img/avatar.jpg'),
+            src: require('../assets/img/i1.jpg'),
             name: 'James Lee',
             place: 'Product Manager, Amazon',
           },
            {
             id: '2',
-            src: require('../assets/img/avatar.jpg'),
+            src: require('../assets/img/i5.jpg'),
             name: 'Olivia White',
-            place: '',
+            place: 'Product Manager, Dropbox',
           },
            {
             id: '3',
-            src: require('../assets/img/avatar.jpg'),
+            src: require('../assets/img/i2.jpg'),
             name: 'Samuel Reyes',
-            place: '',
+            place: 'CTO, StartupHub',
           },
            {
             id: '4',
-            src: require('../assets/img/avatar.jpg'),
+            src: require('../assets/img/i3.jpg'),
             name: 'Brandon James',
-            place: '',
+            place: 'Project Manager, Google',
           },
            {
             id: '5',
-            src: require('../assets/img/avatar.jpg'),
+            src: require('../assets/img/i6.png'),
             name: 'Kate Sanders',
-            place: '',
+            place: 'Project Manager, Uber',
           },
            {
             id: '6',
-            src: require('../assets/img/avatar.jpg'),
+            src: require('../assets/img/i4.jpg'),
             name: 'Simon Doe',
-            place: '',
+            place: 'Project Manager, Google',
           },
       ]
     }),
