@@ -15,54 +15,46 @@
         </v-col>
     </v-row>
     </v-col>
-    <v-row>
-        <v-col cols="12" md="6" v-for="item in items" :key="item.id">
-            <v-hover>
-                
-          <v-card slot-scope="{ hover }" class="mx-auto" flat color="#f7f9fa">
-            <div class="d-flex flex-no-wrap justify-space-between">
-              <div>
-                <v-card-text
-                  class=" ma-3 "
-                   style="text-decoration:underline;text-decoration-color:grey;"
-                > <h3 >{{ item.title }}</h3></v-card-text>
-                <div>
-                    <v-card-text class="ma-3">{{ item.text }}</v-card-text> 
-                    <v-card-text class="ma-3 monospace--text">Client : {{ item.client }}</v-card-text>
-                </div>
-              </div>
-
-              <v-avatar
-                class="ma-3"
-                height="300"
-                width="700"
-                left=""
-                tile
+     <v-row class="pt-16" no-gutters> 
+              <v-col
+                v-for="item in items"
+                :key="item.id"
+                cols="12"
+                md="6"
+                class="px-5 py-4"
               >
-                <v-img :src="item.src">
-                   
-                </v-img>
-              </v-avatar>
-              
-            </div>
-             <v-expand-transition>
-                <div
-                    v-if="hover"
-                    class="d-flex transition grey darken-2 v-card--reveal display-3 white--text"
-                    style="height: 100%;"
-                >
-                    <v-btn dark color="black darken-4"><v-icon>mdi-eye</v-icon><v-spacer> </v-spacer> View Case Study</v-btn>
-                </div>
-            </v-expand-transition>
-          </v-card>
-            </v-hover>
-        </v-col>
-        <v-container class="text-md-center mb-10">
-        <v-btn color="teal" dark align-center to="/portfolio"> <v-icon>mdi-arrow-right-bold-circle</v-icon><v-spacer></v-spacer> View Portfolio</v-btn>
-      </v-container>
-    </v-row>
-    <v-divider class="mt-6"></v-divider>
-    <v-row></v-row>
+                <v-hover>
+                  <template v-slot:default="{ hover }">
+                    <v-card elevation="0" outlined >
+                      <v-row no-gutters>
+                        <v-col class="col-4">
+                          <v-img :src="item.src" height="100%"></v-img>
+                        </v-col>
+                        <v-col class="col-8 px-4 pt-3">
+                          <p
+                            class="dark text-h6 font-weight-bold text-decoration-underline text-decoration-color:grey"
+                          >{{item.title}}</p>
+                          <p
+                            class="font-weight-light text-darken-1 mb-2 text-subtitle-2"
+                          >{{item.text}}</p>
+
+                          <p class="caption">Client : {{ item.client }}</p>
+                          <v-fade-transition>
+                            <v-overlay v-if="hover" absolute color="#2f435c">
+                              <v-btn dark large class color="black">
+                                <v-icon right dark class="mx-1">mdi-eye</v-icon>View Case Study
+                              </v-btn>
+                            </v-overlay>
+                          </v-fade-transition>
+                          
+                        </v-col>
+                      </v-row>
+                    </v-card>
+                  </template>
+                </v-hover>
+              </v-col>
+            </v-row>
+            <v-divider class="mt-6"></v-divider>
   </v-container>
 </template>
 
