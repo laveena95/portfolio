@@ -1,5 +1,5 @@
 <template>
-  <v-container style="background-color:#e8e6e1;">
+  <v-container style="background-color:#f7f9fa;">
     <v-row
       align="center"
     >
@@ -7,7 +7,7 @@
         cols="12"
       >
         <v-card width="1000" flat align-center>
-          <v-container style="background-color:#e8e6e1;">
+          <v-container style="background-color:#f7f9fa;">
             <div class="d-flex flex-no-wrap justify-space-between text--justify">
               <div>
                 <v-card-title

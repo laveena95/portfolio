@@ -34,6 +34,8 @@
         <v-btn color="teal" dark align-center to="/services"> <v-icon>mdi-arrow-right-bold-circle</v-icon><v-spacer></v-spacer> Service & Pricing</v-btn>
       </v-container>
     </v-row>
+    <v-divider class="mt-6"></v-divider>
+    <v-row></v-row>
  </v-container>
 </template>
 

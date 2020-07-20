@@ -30,7 +30,7 @@
       <v-divider class="mt-6" color=""></v-divider>
       </v-list>
       <v-list align-center v-for="menu in menues" :key="menu.id" > 
-        <v-list-item :to="menu.route" color="teal">
+        <v-list-item :to="menu.route" color="teal" class="red--text">
           <v-list-item-icon>
             <v-icon small color="white">{{ menu.icon}}</v-icon>
           </v-list-item-icon>

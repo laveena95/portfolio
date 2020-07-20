@@ -15,7 +15,7 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-container style="background-color:#e8e6e1;">
+      <v-container>
         <v-slide-group
         v-model="model"
         class="pa-4"
@@ -32,7 +32,7 @@
                 <v-card
             class="m1-2"
             height="300"
-            width="300"
+            width="300" color="#f7f9fa"
             
             @click="toggle" outlined=""
             >
@@ -58,6 +58,8 @@
         </v-slide-item>
         </v-slide-group>
     </v-container>
+    <v-divider class="mt-6"></v-divider>
+    <v-row></v-row>
   </v-container>
 </template>
 
