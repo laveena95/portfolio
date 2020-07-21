@@ -42,7 +42,7 @@
       <v-list>
         <div class="text-center">
           <v-btn rounded color="teal darken-3" dark>
-            <v-icon>near_me</v-icon>
+            <v-icon small class="ma-2">fa fa-paper-plane</v-icon>
             Hire Me</v-btn>
         </div>
       </v-list>

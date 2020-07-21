@@ -2,9 +2,9 @@
     <v-layout row align-center justify-center  >
         <v-card class="mt-6" width="800" height="" flat align="center" justify="center">
             <v-card-title primary-title class="layout justify-center"><h2>Services Packages</h2></v-card-title>
-                <v-simple-table dense table-border="1">
+                <v-simple-table dense table-border="1" class="mt-6">
                     <template v-slot:default>
-                    <thead>
+                    <thead >
                         <tr class="text-center teal--text mt-4" style="background-color:">
                         <th ></th>
                         <th ><h3>Basic</h3></th>
