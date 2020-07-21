@@ -2,7 +2,7 @@
     <v-layout row align-center justify-center  >
         <v-card class="mt-6" width="800" height="" flat align="center" justify="center">
             <v-card-title primary-title class="layout justify-center"><h2>Services Packages</h2></v-card-title>
-                <v-simple-table dense table-border="1" class="mt-6">
+                <v-simple-table dense border="2" class="mt-6">
                     <template v-slot:default>
                     <thead >
                         <tr class="text-center teal--text mt-4" style="background-color:">
@@ -105,3 +105,9 @@
     },
   }
 </script>
+
+<style scoped>
+.v-simple-table{
+  border: medium solid #00F;
+}
+</style>
