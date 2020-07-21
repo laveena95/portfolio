@@ -20,8 +20,10 @@
                 </v-card>
             </v-col>
         </v-row>
-        <v-container class="text-md-center mb-10">
-            <v-btn color="teal" dark block to="/blog" class="">next <v-icon small class="m1-6">trending_flat</v-icon></v-btn>
+        <v-container class="text-md-center mb-10" >
+            <v-row class="ma-6">
+                <v-btn color="teal" dark block to="/blog">next <v-icon small class="m1-2">trending_flat</v-icon></v-btn>
+            </v-row>
         </v-container>
     </v-container>
 </template>

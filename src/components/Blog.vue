@@ -16,7 +16,7 @@
         </v-row>
     </v-col>
     <v-container>
-        <v-row>
+        <v-row class="ma-6">
             <v-col  v-for="item in items" :key="item.id" cols="12" md="4">
                 <v-card  class="mx-auto" flat max-width="300" height="550" color="#f7f9fa">
                     <v-img
