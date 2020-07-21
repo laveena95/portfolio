@@ -1,6 +1,6 @@
 <template>
-  <v-container style="background-color:red">
-        <v-row style="background">
+  <v-container >
+        <v-row class="ma-6">
             <v-col  v-for="item in items" :key="item.id" cols="12" md="4">
                 <v-card  class="mx-auto" flat width="300" height="550" color="#f7f9fa">
                     <v-img
@@ -21,7 +21,7 @@
             </v-col>
         </v-row>
         <v-container class="text-md-center mb-10">
-            <v-btn color="teal" dark block to="/blog">next <v-icon>mdi-arrow-right</v-icon></v-btn>
+            <v-btn color="teal" dark block to="/blog" class="">next <v-icon small class="m1-6">trending_flat</v-icon></v-btn>
         </v-container>
     </v-container>
 </template>
