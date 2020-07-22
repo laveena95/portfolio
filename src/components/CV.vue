@@ -187,13 +187,17 @@
                             <h2 class="teal--text ml-3"> SKILLS</h2>
                         </div>
                         <div>
-                            <v-card flat class="ml-n4">
+                            <v-card flat class="ml-n4" style="background-color: red">
                                 <v-card-text>
-                                    <h3 class="ml-3 black--text" >Technical</h3>
-                                    <v-list v-for="item in skills" :key="item.id" class="mt-n4 body-2">
-                                        <v-list-item>
-                                            {{ item.skill }}
-                                        </v-list-item>
+                                    <h3 class="black--text" >Technical</h3>
+                                    <v-list>
+                                        <v-list-item class="body-2 ml-n3">Lorem ipsum dolor sit amet, consectetuer.</v-list-item>
+                                        <v-list-item class="body-2 ml-n3">Lorem ipsum dolor sit amet, consectetuer.</v-list-item>
+                                        <v-list-item class="body-2 ml-n3">Lorem ipsum dolor sit amet, consectetuer.</v-list-item>
+                                        <v-list-item class="body-2 ml-n3">Lorem ipsum dolor sit amet, consectetuer.</v-list-item>
+                                        <v-list-item class="body-2 ml-n3">Lorem ipsum dolor sit amet, consectetuer.</v-list-item>
+                                        <v-list-item class="body-2 ml-n3">Lorem ipsum dolor sit amet, consectetuer.</v-list-item>
+                                        <v-list-item class="body-2 ml-n3">Lorem ipsum dolor sit amet, consectetuer.</v-list-item>
                                     </v-list>
                                 </v-card-text>
                                  <v-card-text>
@@ -244,36 +248,7 @@ export default {
                     path: '',
                 },
             ],
-        skills: [
-            {
-                id: '1',
-                skill: 'JavaScript/Angular/React/Vue',
-            },
-            {
-                id: '2',
-                skill: 'Python/Ruby/PHP',
-            },
-            {
-                id: '3',
-                skill: 'Node.js/ASP.NET',
-            },
-            {
-                id: '4',
-                skill: 'PostgreSQL/MySQL',
-            },
-            {
-                id: '5',
-                skill: 'Object-oriented design',
-            },
-            {
-                id: '6',
-                skill: 'Design and implement database structures',
-            },
-            {
-                id: '7',
-                skill: 'Lead and deliver complex software systems',
-            },
-        ],
+        
         professionals: [
             {
                 id: '1',
@@ -285,11 +260,11 @@ export default {
             },
              {
                 id: '3',
-                professional: 'Effective communication',
+                professional: 'Strong problem solver',
             },
              {
                 id: '4',
-                professional: 'Effective communication',
+                professional: 'Good time management',
             },
         ]
         }
