@@ -1,6 +1,6 @@
 <template>
   <v-container>
-      <v-card elevation=6 flat class="ma-8">
+      <v-card elevation="18" flat class="ma-8">
           <div class="ma-4">
             <v-row>
                 <v-col cols="9">
@@ -50,9 +50,9 @@
             </v-row>
             <v-row>
                 <v-col cols="9">
-                    <div style="border-right: 1px solid silver;">
+                    <div>
                         <div style="border-left: 5px solid teal" class="mt-n1 ml-4">
-                            <h2 class="teal--text ml-3"> WORK EXPERIENCES</h2>
+                            <h3 class="teal--text ml-3 "> WORK EXPERIENCES</h3>
                         </div>
                         <div>
                             <v-card flat>
@@ -143,7 +143,7 @@
                             </v-card>
                         </div>
                         <div style="border-left: 5px solid teal" class="mt-n1 ml-4">
-                            <h2 class="teal--text ml-3"> PROJECTS</h2>
+                            <h3 class="teal--text ml-3"> PROJECTS</h3>
                         </div>
                         <div>
                             <v-card flat>
@@ -182,36 +182,120 @@
                     </div>
                 </v-col>
                 <v-col cols="3">
-                    <div>
+                    <div style="border-left: 1px solid silver;" >
                         <div style="border-left: 5px solid teal;" class="mt-n1 ml-4">
-                            <h2 class="teal--text ml-3"> SKILLS</h2>
+                            <h3 class="teal--text ml-3"> SKILLS</h3>
                         </div>
                         <div>
-                            <v-card flat class="ml-n4" style="background-color: red">
+                            <v-card flat class="" width="400">
                                 <v-card-text>
                                     <h3 class="black--text" >Technical</h3>
                                     <v-list>
-                                        <v-list-item class="body-2 ml-n3">Lorem ipsum dolor sit amet, consectetuer.</v-list-item>
-                                        <v-list-item class="body-2 ml-n3">Lorem ipsum dolor sit amet, consectetuer.</v-list-item>
-                                        <v-list-item class="body-2 ml-n3">Lorem ipsum dolor sit amet, consectetuer.</v-list-item>
-                                        <v-list-item class="body-2 ml-n3">Lorem ipsum dolor sit amet, consectetuer.</v-list-item>
-                                        <v-list-item class="body-2 ml-n3">Lorem ipsum dolor sit amet, consectetuer.</v-list-item>
-                                        <v-list-item class="body-2 ml-n3">Lorem ipsum dolor sit amet, consectetuer.</v-list-item>
-                                        <v-list-item class="body-2 ml-n3">Lorem ipsum dolor sit amet, consectetuer.</v-list-item>
+                                        <v-list-item class="body-2 ml-n3">JavaScript/Angular/React/Vue</v-list-item>
+                                        <v-list-item class="body-2 ml-n3 mt-n4">Python/Ruby/PHP</v-list-item>
+                                        <v-list-item class="body-2 ml-n3 mt-n4">Node.js/ASP.NET</v-list-item>
+                                        <v-list-item class="body-2 ml-n3 mt-n4">PostgreSQL/MySQL.</v-list-item>
+                                        <v-list-item class="body-2 ml-n3 mt-n4">Object-oriented design</v-list-item>
+                                        <v-list-item class="body-2 ml-n3 mt-n2">Design and implement database structures</v-list-item>
+                                        <v-list-item class="body-2 ml-n3 mt">Lead and deliver complex software systems</v-list-item>
                                     </v-list>
                                 </v-card-text>
                                  <v-card-text>
-                                    <h3 class="ml-3 black--text" >Professional</h3>
-                                    <v-list v-for="item in professionals" :key="item.id" class="mt-n4 body-2">
-                                        <v-list-item>
-                                            {{ item.professional }}
-                                        </v-list-item>
+                                    <h3 class="black--text" >Professional</h3>
+                                    <v-list>
+                                        <v-list-item class="body-2 ml-n3">Effective communication</v-list-item>
+                                        <v-list-item class="body-2 ml-n3 mt-n4">Team player</v-list-item>
+                                        <v-list-item class="body-2 ml-n3 mt-n4">Strong problem solver</v-list-item>
+                                        <v-list-item class="body-2 ml-n3 mt-n4">Good time management</v-list-item>
                                     </v-list>
+                                </v-card-text>
+                            </v-card>
+                        </div>
+                        <div style="border-left: 5px solid teal;" class="mt-n1 ml-4">
+                            <h3 class="teal--text ml-3"> EDUCATION</h3>
+                        </div>
+                        <div>
+                            <v-card flat class="">
+                                <v-card-text>
+                                   <h4 class="black--text" >MSc in Computer Science</h4>
+                                   <p class="body-2">University College London <br> 2010 - 2011</p>
+                                
+                                   <h4 class="black--text" >BSc Maths and Physics</h4>
+                                   <p class="body-2">Imperial College London <br> 2007 - 2010</p>
+                                </v-card-text>
+                            </v-card>
+                        </div>
+                        <div style="border-left: 5px solid teal;" class="mt-n1 ml-4">
+                            <h3 class="teal--text ml-3"> AWARDS</h3>
+                        </div>
+                        <div>
+                            <v-card flat class="">
+                                <v-card-text>
+                                   <h4 class="black--text" >Award Lorem Ipsum</h4>
+                                   <p class="body-2">Microsoft lorem ipsum <br>(2019)</p>
+                                
+                                   <h4 class="black--text" >Award Donec Sodales</h4>
+                                   <p class="body-2">Imperial College London <br> Oracle Aenean (2017)</p>
+                                </v-card-text>
+                            </v-card>
+                        </div>
+                        <div style="border-left: 5px solid teal;" class="mt-n1 ml-4">
+                            <h3 class="teal--text ml-3"> LANGUAGES</h3>
+                        </div>
+                        <div>
+                            <v-card flat class="">
+                                <v-card-text>
+                                   <v-list>
+                                       <v-list-item class="body-2 ml-n3 mt-n5">Tamil (Native)</v-list-item>
+                                       <v-list-item class="body-2 ml-n3 mt-n5">English (Professional)</v-list-item>
+                                   </v-list>
+                                </v-card-text>
+                            </v-card>
+                        </div>
+                        <div style="border-left: 5px solid teal;" class="mt-n1 ml-4">
+                            <h3 class="teal--text ml-3"> INTERESTS</h3>
+                        </div>
+                        <div>
+                            <v-card flat class="">
+                                <v-card-text>
+                                   <v-list>
+                                       <v-list-item class="body-2 ml-n3 mt-n5">Climbing</v-list-item>
+                                       <v-list-item class="body-2 ml-n3 mt-n5">Snowboarding</v-list-item>
+                                          <v-list-item class="body-2 ml-n3 mt-n5">Photography</v-list-item>
+                                       <v-list-item class="body-2 ml-n3 mt-n5">Travelling</v-list-item>
+                                   </v-list>
                                 </v-card-text>
                             </v-card>
                         </div>
                     </div>
                 </v-col>
+            </v-row>
+            <v-row class="mx-2">
+                    <v-col cols="12" class="">
+                        <v-divider class="mt-2" color="silver"></v-divider>
+                    </v-col>
+                </v-row>
+            <v-row>
+                <v-col cols="2.5"></v-col>
+                <v-col cols="2">
+                    <v-row>
+                        <v-icon  fab class="mb-4"> fab fa-github-square </v-icon>
+                        <a href="" class="caption black--text ml-1">github.com/username</a>
+                    </v-row>
+                </v-col>
+                <v-col cols="2.5">
+                    <v-row>
+                        <v-icon  fab class="mb-4 ml-4"> fab fa-linkedin </v-icon>
+                        <a href="" class="caption black--text ml-1">linkedin.com/in/username</a>
+                    </v-row>
+                </v-col>
+                <v-col cols="2" >
+                    <v-row>
+                        <v-icon  fab class="mb-4"> fab fa-twitter-square </v-icon>
+                        <a href="" class="caption black--text ml-1">@twittername</a>
+                    </v-row>
+                </v-col>
+                <v-col cols="2.5"></v-col>
             </v-row>
         </div>
       </v-card>
@@ -248,31 +332,19 @@ export default {
                     path: '',
                 },
             ],
-        
-        professionals: [
-            {
-                id: '1',
-                professional: 'Effective communication',
-            },
-             {
-                id: '2',
-                professional: 'Team player',
-            },
-             {
-                id: '3',
-                professional: 'Strong problem solver',
-            },
-             {
-                id: '4',
-                professional: 'Good time management',
-            },
-        ]
         }
     }
 
 }
 </script>
 
-<style>
+<style scoped>
+a{
+    text-decoration: none;
+}
 
+
+.fab:hover{
+    color: teal;
+}
 </style>
