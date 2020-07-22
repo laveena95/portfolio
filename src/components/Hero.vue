@@ -42,15 +42,20 @@
             <v-card-text class="">
                 {{ text }}
             </v-card-text>
-            
-            <v-avatar size="70" class="ml-4">
+            <v-row>
+              <v-col>
+                <v-avatar size="70" class="ml-4">
                 <v-img class="elevation-6" :src="item.src"></v-img>
             </v-avatar>
-            <v-list-tile-content class="text-center">
-                <v-list-tile-text class="ml-4 teal--text ">{{ item.name }}
-                    <v-card-text class="ml-6 mb-5">{{item.place}}</v-card-text>
-                </v-list-tile-text>
+              </v-col>
+              <v-col>
+                <v-list-tile-content class="caption">
+               <p class="ml-n15 mt-4">{{ item.name }} <br> {{ item.place }} </p>
             </v-list-tile-content>
+              </v-col>
+            </v-row>
+            
+            
             
             </v-card>
             </v-col>
