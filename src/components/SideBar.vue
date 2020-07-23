@@ -1,46 +1,55 @@
 <template>
   <div>
     <v-navigation-drawer
-      dark
+      app
+      overflow
+      color="teal"
        v-model="primaryDrawer.model"
       :clipped="primaryDrawer.clipped"
       :floating="primaryDrawer.floating"
       :mini-variant="primaryDrawer.mini"
       :permanent="primaryDrawer.type === 'permanent'"
       :temporary="primaryDrawer.type === 'temporary'"
-      app
-      overflow
-      class="teal darken-1"
+    
     >
-      <h2 class="text-center white--text mt-6">John Doe</h2>
-      <v-list>
-      <v-list-item-avatar class="mt-6 ml-10" size="150">
-          <img src="../assets/img/avatar.jpg" alt="">
-      </v-list-item-avatar>
-      <v-list-item>
-        <p class="text-center white--text mt-4" style="font-size: 13px">Hi, my name is John Doe and I'm a senior software engineer. Welcome to my personal website!</p>
-      </v-list-item>
-      <v-list-item>
-        <div class="text-center mt-4" v-for="item in items" :key="item.id">
-          <v-btn class="mx-auto ml-2" fab x-small color="white">
-            <v-icon color="teal">{{ item.icon }}</v-icon>
-          </v-btn>
-        </div>
-      </v-list-item>
-      <v-divider class="mt-6" color=""></v-divider>
+      <div class="hidden-sm-and-up">
+        <v-menu offset-y>
+          <template v-slot:activator="{ on }">
+               <v-app-bar-nav-icon v-on="on"  v-if="primaryDrawer.type !== 'permanent'"
+        @click.stop="primaryDrawer.model = !primaryDrawer.model"></v-app-bar-nav-icon>
+          </template>
+        </v-menu>
+        <h2 class="text-center white--text mt-6">John Doe</h2>
+      </div>
+      
+      <v-list  >
+        <v-list-item-avatar class="mt-6 ml-10" size="150">
+            <img src="../assets/img/avatar.jpg" alt="">
+        </v-list-item-avatar>
+        <v-list-item>
+          <p class="text-center white--text mt-4" style="font-size: 13px">Hi, my name is John Doe and I'm a senior software engineer. Welcome to my personal website!</p>
+        </v-list-item>
+        <v-list-item>
+          <div class="text-center mt-4" v-for="item in items" :key="item.id">
+            <v-btn class="mx-auto ml-2" fab x-small color="white">
+              <v-icon color="teal">{{ item.icon }}</v-icon>
+            </v-btn>
+          </div>
+        </v-list-item>
+        <v-divider class="mt-6" color=""></v-divider>
       </v-list>
-      <v-list align-center v-for="menu in menues" :key="menu.id" > 
-        <v-list-item :to="menu.route" color="teal darken-1" text-decoration-color="">
+      <v-list align-center v-for="menu in menues" :key="menu.id"> 
+        <v-list-item :to="menu.route" color="teal" class="red--text">
           <v-list-item-icon>
-            <v-icon small color="white">{{ menu.icon}}</v-icon>
+            <v-icon small color="white" class="ml-4">{{ menu.icon}}</v-icon>
           </v-list-item-icon>
           <v-list-item-content>
-            <v-list-item-title class="white--text">{{ menu.title }}</v-list-item-title>
+            <v-list-item-title class="white--text body-2">{{ menu.title }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
       <v-list>
-        <div class="text-center">
+        <div class="text-center" >
           <v-btn rounded color="teal darken-3" dark>
             <v-icon small class="ma-2">fa fa-paper-plane</v-icon>
             Hire Me</v-btn>
@@ -60,6 +69,21 @@
         </div>
       </v-container>
     </v-navigation-drawer>
+   
+    <v-toolbar class="hidden-sm-and-up" color="teal">
+      <div class="hidden-sm-and-up">
+        <v-menu offset-y>
+          <template v-slot:activator="{ on }">
+               <v-app-bar-nav-icon v-on="on"  
+               v-if="primaryDrawer.type !== 'permanent'"
+              @click.stop="primaryDrawer.model = !primaryDrawer.model"
+              color="white"
+              class="ml-n2 " large></v-app-bar-nav-icon>
+          </template>
+        </v-menu>
+      </div>
+      <h2 class="text-center white--text ">John Doe</h2>
+    </v-toolbar>
   </div>
 </template>
 

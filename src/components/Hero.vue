@@ -1,20 +1,13 @@
 <template>
   <v-container > 
-        <v-col cols="12" md="4">
-        <v-row>
-          <v-col cols="12" md="2">
-            <v-card height="45px" width="5px" color="teal" class="ml-10">
-            </v-card>
-          </v-col>
-          <v-col cols="12" md="10">
-            <v-list two-line="" subheader="" class="nl-n8">
-              <v-list-item>
-                  <h1 class="mb-5 ">Testimonials</h1>
-                </v-list-item>
-            </v-list>
-          </v-col>
-        </v-row>
+    <v-row align-center justify-center>
+      <v-col cols="12" class="ml-8">
+        <div style="border-left:5px solid teal">
+          <h1 class="ml-4">Testimonial</h1>
+        </div>
       </v-col>
+    </v-row>
+    <v-row>
       <v-container>
         <v-slide-group
         v-model="model"
@@ -54,15 +47,13 @@
             </v-list-tile-content>
               </v-col>
             </v-row>
-            
-            
-            
             </v-card>
             </v-col>
         </v-row>
         </v-slide-item>
         </v-slide-group>
     </v-container>
+    </v-row>
     <v-divider class="mt-6"></v-divider>
     <v-row></v-row>
   </v-container>
