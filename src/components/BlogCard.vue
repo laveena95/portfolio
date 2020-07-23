@@ -13,7 +13,7 @@
                         </v-card-title>
                         <v-card-text> {{ item.text }}</v-card-text>
                         <v-card-actions>
-                        <p class="teal--text ml-2">Read More <v-icon small color="teal">mdi-arrow-right</v-icon></p>
+                        <p class="teal--text ml-2">Read More <v-icon small color="teal">trending_flat</v-icon></p>
                         </v-card-actions>
                         <v-card-text>{{ item.day }}</v-card-text>
                     </div>

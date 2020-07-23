@@ -1,24 +1,16 @@
 <template>
   <v-container>
-      <v-col cols="12" md="4">
-        <v-row>
-            <v-col cols="12" md="2">
-            <v-card height="45px" width="5px" color="teal" class="ml-10">
-            </v-card>
-            </v-col>
-            <v-col cols="12" md="10">
-            <v-list two-line="" subheader="" class="nl-n8">
-                <v-list-item>
-                    <h1 class="mb-5 ">Latest_Blog_Posts</h1>
-                </v-list-item>
-            </v-list>
-            </v-col>
-        </v-row>
-    </v-col>
+    <v-row align-center justify-center>
+        <v-col cols="12" class="ml-8" xs="6">
+        <div style="border-left:5px solid teal">
+            <h1 class="ml-4">Latest Blog Posts</h1>
+        </div>
+        </v-col>
+    </v-row>
     <v-container>
         <v-row class="ma-6">
             <v-col  v-for="item in items" :key="item.id" cols="12" md="4">
-                <v-card  class="mx-auto" flat max-width="300" height="550" color="#f7f9fa">
+                <v-card  class="mx-auto" flat width="" height="550" color="#f7f9fa">
                     <v-img
                     :src="item.src"
                     aspect-ratio="1.5" 
@@ -27,9 +19,9 @@
                         <v-card-title primary-title>
                             <h5 class=" mb-0"><u>{{ item.title }}</u></h5>
                         </v-card-title>
-                        <v-card-text> {{ item.text }}</v-card-text>
+                        <v-card-text class="body-2"> {{ item.text }}</v-card-text>
                         <v-card-actions>
-                        <p class="teal--text ml-2">Read More <v-icon small color="teal">mdi-arrow-right</v-icon></p>
+                        <p class="teal--text ml-2 body-2">Read More <v-icon small color="teal">trending_flat</v-icon></p>
                         </v-card-actions>
                         <v-card-text>{{ item.day }}</v-card-text>
                     </div>
