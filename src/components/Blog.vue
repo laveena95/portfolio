@@ -27,9 +27,13 @@
                     </div>
                 </v-card>
             </v-col>
-            <v-container class="text-md-center mb-10">
-                <v-btn color="teal" dark align-center to="/blog"> <v-icon>mdi-arrow-right-bold-circle</v-icon><v-spacer></v-spacer> View Blog</v-btn>
+        </v-row>
+        <v-row class="mx-9">
+            <v-col cols="12" sm="">
+                <v-container class="text-md-center mb-10">
+                <v-btn color="teal" dark align-center to="/blog"> <v-icon>mdi-arrow-right-bold-circle</v-icon><v-spacer></v-spacer> View blog</v-btn>
             </v-container>
+            </v-col>
         </v-row>
     </v-container>
   </v-container>
