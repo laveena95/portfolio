@@ -9,7 +9,6 @@
                 <v-card-title
                   class="headline"
                 ><h1>John Doe</h1></v-card-title>
-
                 <v-card-subtitle class="mt-4" ><h2 style="font-weight:300;color:back;">Senior Software Engineer</h2></v-card-subtitle>
                 <v-card-text><p>I'm a software engineer specialised in frontend and backend development for complex scalable web apps. I write about software development on <a href="/blog" class="teal--text">my blog</a>. Want to know how I may help your project? Check out my project <a href="/portfolio" class="teal--text">portfolio</a> and online <a href="/resume" class="teal--text">resume</a>.</p>
               </v-card-text>

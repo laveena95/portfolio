@@ -38,7 +38,6 @@
                         </v-btn>
                       </v-overlay>
                     </v-fade-transition>
-                    
                   </v-col>
                 </v-row>
               </v-card>

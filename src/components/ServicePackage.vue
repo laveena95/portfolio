@@ -1,10 +1,13 @@
 <template>
     <v-layout row align-center justify-center  >
-        <v-card class="mt-6" width="800" height="" flat align="center" justify="center">
-            <v-card-title primary-title class="layout justify-center"><h2>Services Packages</h2></v-card-title>
+       <v-col cols="12" md="9">
+         <v-card flat="">
+           <v-card-title primary-title class="layout justify-center"><h2>Services Packages</h2></v-card-title>
+             <v-row>
+              <v-col cols="12">
                 <v-simple-table dense border="2" class="mt-6">
-                    <template v-slot:default>
-                    <thead >
+                    <template >
+                    <thead class="text-center ma-4">
                         <tr class="text-center teal--text mt-4" style="background-color:">
                         <th ></th>
                         <th ><h3>Basic</h3></th>
@@ -28,7 +31,10 @@
                     </tbody>
                     </template>
                 </v-simple-table>
-        </v-card>
+              </v-col>
+            </v-row>
+         </v-card>
+        </v-col>
     </v-layout>
 </template>
 

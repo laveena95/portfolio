@@ -27,10 +27,10 @@
                   <template v-slot:default="{ hover }">
                     <v-card elevation="0" outlined >
                       <v-row no-gutters>
-                        <v-col class="col-4">
+                        <v-col class="col-4" cols="12" md="4">
                           <v-img :src="content.src" height="100%"></v-img>
                         </v-col>
-                        <v-col class="col-8 px-4 pt-3">
+                        <v-col class="col-8 px-4 pt-3" cols="12" md="8">
                           <p
                             class="dark text-h6 font-weight-bold text-decoration-underline"
                           >{{content.title}}</p>
