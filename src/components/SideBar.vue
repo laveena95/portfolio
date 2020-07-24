@@ -12,15 +12,20 @@
       :temporary="primaryDrawer.type === 'temporary'"
     
     >
+      <v-toolbar class="hidden-sm-and-up" color="teal" flat>
       <div class="hidden-sm-and-up">
         <v-menu offset-y>
           <template v-slot:activator="{ on }">
-               <v-app-bar-nav-icon v-on="on"  v-if="primaryDrawer.type !== 'permanent'"
-        @click.stop="primaryDrawer.model = !primaryDrawer.model"></v-app-bar-nav-icon>
+               <v-app-bar-nav-icon v-on="on"  
+               v-if="primaryDrawer.type !== 'permanent'"
+              @click.stop="primaryDrawer.model = !primaryDrawer.model"
+              color="white"
+              class="ml-n2 " large></v-app-bar-nav-icon>
           </template>
         </v-menu>
-        <h2 class="text-center white--text mt-6">John Doe</h2>
       </div>
+      <h2 class="text-center white--text ">John Doe</h2>
+    </v-toolbar>
       
       <v-list  >
         <v-list-item-avatar class="mt-6 ml-10" size="150">
