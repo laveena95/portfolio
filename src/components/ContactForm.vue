@@ -1,5 +1,5 @@
 <template>
-    <v-layout row align-center justify-center style="background-color:;" >
+    <v-layout row align-center justify-center class="ma-1" >
             <v-card class="mt-6" width="600" height="" flat align="center" justify="center" style="background-color:;">
                 <v-card-title primary-title class="layout justify-center"><h2>Get In Touch</h2></v-card-title>
                     <v-card-content>

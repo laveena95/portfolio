@@ -1,10 +1,11 @@
 <template>
-    <v-layout row align-center justify-center style="background-color:#f7f9fa;" >
-            <v-card class="mt-6" width="800" height="300" flat align="center" justify="center" style="background-color:#f7f9fa;">
+    <v-layout row align-center justify-center style="background-color:#f7f9fa;" class="ma-1" >
+        <v-col cols="12" md="9">
+            <v-card class="mt-6" flat align="center" justify="center" style="background-color:#f7f9fa;">
                 <v-card-title primary-title class="layout justify-center"><h2>Contact</h2></v-card-title>
                     <v-card-content>
-                        <p>Interested in hiring me for your project or just want to say hi? You can fill in the contact form below or send me an email to <a href="" class="teal--text">simon.doe@yourwebsite.com</a></p>
-                        <p>Want to get connected? Follow me on the social channels below.</p>
+                        <p class="body-1">Interested in hiring me for your project or just want to say hi? You can fill in the contact form below or send me an email to <a href="" class="teal--text">simon.doe@yourwebsite.com</a></p>
+                        <p class="body-1">Want to get connected? Follow me on the social channels below.</p>
                         
                         <v-list class="text-center" width="300" style="background-color:#f7f9fa;;">
                             <v-list-item class="mx-auto">
@@ -17,6 +18,7 @@
                         </v-list>
                     </v-card-content>
             </v-card>
+        </v-col>
     </v-layout>
 </template>
 
