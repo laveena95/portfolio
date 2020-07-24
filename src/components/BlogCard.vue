@@ -1,6 +1,6 @@
 <template>
   <v-container >
-        <v-row class="ma-6">
+        <v-row class="ma-1">
             <v-col  v-for="item in items" :key="item.id" cols="12" md="4">
                 <v-card  class="mx-auto" flat width="300" height="550" color="#f7f9fa">
                     <v-img
